@@ -1,0 +1,35 @@
+/* Define CSS variables */
+:root {
+  --color-background: #121212;
+  --color-text: #ffffff;
+  --color-primary: #1db954;
+  --color-secondary: #535353;
+  --color-error: #ff5555;
+  --font-primary: "Circular Std", Arial, sans-serif;
+}
+
+/* Reset and Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
