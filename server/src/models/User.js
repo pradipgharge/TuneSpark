@@ -3,7 +3,7 @@ const validator = require("validator");
 
 const UserSchema = new mongoose.Schema(
   {
-    name: { type: String, required: true, unique: true, minlength: 3 },
+    username: { type: String, required: true, unique: true, minlength: 3 },
     email: {
       type: String,
       required: true,
@@ -13,7 +13,7 @@ const UserSchema = new mongoose.Schema(
     },
     password: { type: String, required: true, minlength: 8, select: false },
   },
-  { timeStamps: true }
+  { timestamps: true }
 );
 
 module.exports = mongoose.model("User", UserSchema);

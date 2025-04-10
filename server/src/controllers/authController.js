@@ -49,7 +49,7 @@ const registerUser = async (req, res) => {
       data: {
         user: {
           id: user._id,
-          name: user.name,
+          name: user.username,
           email: user.email,
         },
         token,
